@@ -1,0 +1,66 @@
+/* Reset styles to remove browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set global styles */
+  body {
+    background-image: url("Fotor_AI.png");
+    background-color: #cccccc; 
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  body p1{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Set header styles */
+  header {
+    position: relative;
+  }
+
+  header nav {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin: 0 1rem;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .p1 {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
