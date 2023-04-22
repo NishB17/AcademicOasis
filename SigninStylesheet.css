@@ -1,0 +1,111 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Form styles */
+  .form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+  }
+  
+  .form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input[type="text"],
+  .form input[type="password"] {
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #4CAF50;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button[type="submit"],
+  .forgot-password-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 45%;
+  }
+  
+  button[type="submit"]:hover,
+  .forgot-password-button:hover {
+    background-color: #39843f;
+  }
+  
+  .forgot-password-button {
+    background-color: #f2f2f2;
+    color: #444;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .forgot-password-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .sign-up-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .sign-up-container a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .sign-up-container a:hover {
+    text-decoration: underline;
+  }
+  
