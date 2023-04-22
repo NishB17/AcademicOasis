@@ -8,6 +8,34 @@
   body {
     background-color: #f2f2f2;
   }
+
+  header {
+    position: relative;
+  }
+
+  header nav {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin: 0 1rem;
+  }
+  
+  header ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+
   
   .container {
     display: flex;
