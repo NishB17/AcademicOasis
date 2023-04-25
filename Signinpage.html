@@ -9,24 +9,25 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Universities</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Signinpage.html">Sign In</a></li>
+          <h1>Academic Oasis</h1>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="CoursePage.html">Courses</a>
+          <a href="UniversityPage.html">Universities</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Signinpage.html">Sign In</a>
         </ul>
       </nav>
     </header>
     <div class="container">
-      <form class="form">
+      <form class="form" id="login-form">
         <h2>Sign In</h2>
         <label for="username">Username</label>
         <input type="text" id="username" name="username" placeholder="Enter your username" required>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
         <div class="button-container">
-          <button type="submit">Sign In</button>
+          <button type="submit" onclick="login()">Sign In</button>
           <button type="button" class="forgot-password-button">Forgot Password</button>
         </div>
       </form>
