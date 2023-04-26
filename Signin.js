@@ -1,6 +1,5 @@
 function login() {
   // Get form inputs
-  alert("Login Called ");
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
 
@@ -14,22 +13,15 @@ function login() {
     return false;
   }
 
-  // Perform AJAX request to server-side script for handling login
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "login.php", true);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      // Handle server response
-      var response = xhr.responseText;
-      if (response === "success") {
-        alert("Login successful!");
-        window.location.href = "index.html"; // Redirect to dashboard page
-      } else {
+  if (username === "tester" && password === "pass") {
+      alert("Login successful!");
+      window.location ="index.html"; // Redirect to dashboard page
+      return false;
+  } else {
         alert("Invalid username or password. Please try again.");
-      }
-    }
-  };
-  xhr.send("username=" + username + "&password=" + password);
+        return false;
+  }
+    
+  
 }
 

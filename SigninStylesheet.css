@@ -17,12 +17,28 @@
   header {
     position: relative;
   }
+  nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  
+  nav a:hover {
+    color: #666;
+  }
 
-  header nav {
+  nav h1{
     position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 100px;
+    top: 25px;
   }
 
   header ul {
