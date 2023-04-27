@@ -50,7 +50,7 @@
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
-    justify-content: space-around;
+    justify-content: left;
   }
   
   h1, h2, h3 {
@@ -97,8 +97,7 @@
   .course-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
-        text-align: left;
+        justify-content: space-evenly;
   }
 
   /* Course cards */
@@ -126,8 +125,8 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 200px;
+    width: 300px;
     object-fit: cover;
-    width: 100%;
   }
   
   .course-card h2 {
